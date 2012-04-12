@@ -15,6 +15,9 @@
 		AB3CE3DC151802A300D49806 /* JHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CE3DB151802A300D49806 /* JHAppDelegate.m */; };
 		AB3CE3DF151802A300D49806 /* JHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CE3DE151802A300D49806 /* JHViewController.m */; };
 		AB3CE3E2151802A300D49806 /* JHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3CE3E0151802A300D49806 /* JHViewController.xib */; };
+		AB3CE3EA1518061500D49806 /* JHRotaryWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CE3E91518061500D49806 /* JHRotaryWheel.m */; };
+		AB3CE3ED1518098F00D49806 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CE3EC1518098F00D49806 /* QuartzCore.framework */; };
+		ABD826371533803A009733C7 /* wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD826361533803A009733C7 /* wheel.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,20 @@
 		AB3CE3CB151802A300D49806 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AB3CE3CD151802A300D49806 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB3CE3CF151802A300D49806 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AB3CE3D3151802A300D49806 /* Timer-Info.plist */ = {isa = PBXFileReference; path = "Timer-Info.plist"; sourceTree = "<group>"; };
+		AB3CE3D3151802A300D49806 /* Timer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Timer-Info.plist"; sourceTree = "<group>"; };
 		AB3CE3D5151802A300D49806 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB3CE3D7151802A300D49806 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AB3CE3D9151802A300D49806 /* Timer-Prefix.pch */ = {isa = PBXFileReference; path = "Timer-Prefix.pch"; sourceTree = "<group>"; };
-		AB3CE3DA151802A300D49806 /* JHAppDelegate.h */ = {isa = PBXFileReference; path = JHAppDelegate.h; sourceTree = "<group>"; };
+		AB3CE3D9151802A300D49806 /* Timer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Timer-Prefix.pch"; sourceTree = "<group>"; };
+		AB3CE3DA151802A300D49806 /* JHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAppDelegate.h; sourceTree = "<group>"; };
 		AB3CE3DB151802A300D49806 /* JHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAppDelegate.m; sourceTree = "<group>"; };
-		AB3CE3DD151802A300D49806 /* JHViewController.h */ = {isa = PBXFileReference; path = JHViewController.h; sourceTree = "<group>"; };
+		AB3CE3DD151802A300D49806 /* JHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHViewController.h; sourceTree = "<group>"; };
 		AB3CE3DE151802A300D49806 /* JHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHViewController.m; sourceTree = "<group>"; };
 		AB3CE3E1151802A300D49806 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JHViewController.xib; sourceTree = "<group>"; };
+		AB3CE3E81518061500D49806 /* JHRotaryWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHRotaryWheel.h; sourceTree = "<group>"; };
+		AB3CE3E91518061500D49806 /* JHRotaryWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRotaryWheel.m; sourceTree = "<group>"; };
+		AB3CE3EB1518063900D49806 /* JHRotaryWheelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHRotaryWheelProtocol.h; sourceTree = "<group>"; };
+		AB3CE3EC1518098F00D49806 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ABD826361533803A009733C7 /* wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3CE3ED1518098F00D49806 /* QuartzCore.framework in Frameworks */,
 				AB3CE3CC151802A300D49806 /* UIKit.framework in Frameworks */,
 				AB3CE3CE151802A300D49806 /* Foundation.framework in Frameworks */,
 				AB3CE3D0151802A300D49806 /* CoreGraphics.framework in Frameworks */,
@@ -50,7 +59,9 @@
 		AB3CE3BC151802A200D49806 = {
 			isa = PBXGroup;
 			children = (
+				AB3CE3EC1518098F00D49806 /* QuartzCore.framework */,
 				AB3CE3D1151802A300D49806 /* Timer */,
+				ABD826341533801B009733C7 /* Resources */,
 				AB3CE3CA151802A300D49806 /* Frameworks */,
 				AB3CE3C8151802A300D49806 /* Products */,
 			);
@@ -81,6 +92,9 @@
 				AB3CE3DB151802A300D49806 /* JHAppDelegate.m */,
 				AB3CE3DD151802A300D49806 /* JHViewController.h */,
 				AB3CE3DE151802A300D49806 /* JHViewController.m */,
+				AB3CE3E81518061500D49806 /* JHRotaryWheel.h */,
+				AB3CE3E91518061500D49806 /* JHRotaryWheel.m */,
+				AB3CE3EB1518063900D49806 /* JHRotaryWheelProtocol.h */,
 				AB3CE3E0151802A300D49806 /* JHViewController.xib */,
 				AB3CE3D2151802A300D49806 /* Supporting Files */,
 			);
@@ -96,6 +110,15 @@
 				AB3CE3D9151802A300D49806 /* Timer-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABD826341533801B009733C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABD826361533803A009733C7 /* wheel.png */,
+			);
+			name = Resources;
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +175,7 @@
 			files = (
 				AB3CE3D6151802A300D49806 /* InfoPlist.strings in Resources */,
 				AB3CE3E2151802A300D49806 /* JHViewController.xib in Resources */,
+				ABD826371533803A009733C7 /* wheel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +189,7 @@
 				AB3CE3D8151802A300D49806 /* main.m in Sources */,
 				AB3CE3DC151802A300D49806 /* JHAppDelegate.m in Sources */,
 				AB3CE3DF151802A300D49806 /* JHViewController.m in Sources */,
+				AB3CE3EA1518061500D49806 /* JHRotaryWheel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +266,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Timer/Timer-Prefix.pch";
 				INFOPLIST_FILE = "Timer/Timer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -252,6 +278,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Timer/Timer-Prefix.pch";
 				INFOPLIST_FILE = "Timer/Timer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -276,6 +303,7 @@
 				AB3CE3E7151802A300D49806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
