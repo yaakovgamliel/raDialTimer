@@ -22,6 +22,8 @@
     self.viewController = [[JHViewController alloc] initWithNibName:@"JHViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    [application setStatusBarStyle:UIStatusBarStyleBlackOpaque];
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
     return YES;
 }
 

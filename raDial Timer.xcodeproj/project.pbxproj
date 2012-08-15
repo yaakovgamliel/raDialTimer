@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB00517D155886BC001B57B6 /* wheelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AB00517C155886BC001B57B6 /* wheelButton.png */; };
+		AB00518015588CEF001B57B6 /* wheelButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB00517F15588CEF001B57B6 /* wheelButton@2x.png */; };
+		AB0051821558B2C2001B57B6 /* wheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0051811558B2C2001B57B6 /* wheel@2x.png */; };
 		AB3CE3CC151802A300D49806 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CE3CB151802A300D49806 /* UIKit.framework */; };
 		AB3CE3CE151802A300D49806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CE3CD151802A300D49806 /* Foundation.framework */; };
 		AB3CE3D0151802A300D49806 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CE3CF151802A300D49806 /* CoreGraphics.framework */; };
@@ -17,18 +20,31 @@
 		AB3CE3E2151802A300D49806 /* JHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3CE3E0151802A300D49806 /* JHViewController.xib */; };
 		AB3CE3EA1518061500D49806 /* JHRotaryWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3CE3E91518061500D49806 /* JHRotaryWheel.m */; };
 		AB3CE3ED1518098F00D49806 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3CE3EC1518098F00D49806 /* QuartzCore.framework */; };
+		AB47A5F3156D7FAD0073343F /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = AB47A5F1156D7FAD0073343F /* background.png */; };
+		AB47A5F4156D7FAD0073343F /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB47A5F2156D7FAD0073343F /* background@2x.png */; };
+		AB561A9D1569E72F00BA8CC3 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = AB561A971569E72F00BA8CC3 /* Icon-72.png */; };
+		AB561A9E1569E72F00BA8CC3 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = AB561A981569E72F00BA8CC3 /* Icon-Small-50.png */; };
+		AB561A9F1569E72F00BA8CC3 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = AB561A991569E72F00BA8CC3 /* Icon-Small.png */; };
+		AB561AA01569E72F00BA8CC3 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB561A9A1569E72F00BA8CC3 /* Icon-Small@2x.png */; };
+		AB561AA11569E72F00BA8CC3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AB561A9B1569E72F00BA8CC3 /* Icon.png */; };
+		AB561AA21569E72F00BA8CC3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB561A9C1569E72F00BA8CC3 /* Icon@2x.png */; };
+		AB9EEEF51569E31700481D90 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9EEEF41569E31700481D90 /* default.png */; };
+		AB9EEEF81569E33B00481D90 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9EEEF71569E33B00481D90 /* default@2x.png */; };
 		ABD826371533803A009733C7 /* wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD826361533803A009733C7 /* wheel.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB3CE3C7151802A300D49806 /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB00517C155886BC001B57B6 /* wheelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheelButton.png; sourceTree = "<group>"; };
+		AB00517F15588CEF001B57B6 /* wheelButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheelButton@2x.png"; sourceTree = "<group>"; };
+		AB0051811558B2C2001B57B6 /* wheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel@2x.png"; sourceTree = "<group>"; };
+		AB3CE3C7151802A300D49806 /* raDial Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "raDial Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3CE3CB151802A300D49806 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AB3CE3CD151802A300D49806 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB3CE3CF151802A300D49806 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AB3CE3D3151802A300D49806 /* Timer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Timer-Info.plist"; sourceTree = "<group>"; };
+		AB3CE3D3151802A300D49806 /* raDial Timer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "raDial Timer-Info.plist"; sourceTree = "<group>"; };
 		AB3CE3D5151802A300D49806 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB3CE3D7151802A300D49806 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AB3CE3D9151802A300D49806 /* Timer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Timer-Prefix.pch"; sourceTree = "<group>"; };
+		AB3CE3D9151802A300D49806 /* raDial Timer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "raDial Timer-Prefix.pch"; sourceTree = "<group>"; };
 		AB3CE3DA151802A300D49806 /* JHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAppDelegate.h; sourceTree = "<group>"; };
 		AB3CE3DB151802A300D49806 /* JHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAppDelegate.m; sourceTree = "<group>"; };
 		AB3CE3DD151802A300D49806 /* JHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHViewController.h; sourceTree = "<group>"; };
@@ -38,6 +54,16 @@
 		AB3CE3E91518061500D49806 /* JHRotaryWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRotaryWheel.m; sourceTree = "<group>"; };
 		AB3CE3EB1518063900D49806 /* JHRotaryWheelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHRotaryWheelProtocol.h; sourceTree = "<group>"; };
 		AB3CE3EC1518098F00D49806 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AB47A5F1156D7FAD0073343F /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		AB47A5F2156D7FAD0073343F /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		AB561A971569E72F00BA8CC3 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		AB561A981569E72F00BA8CC3 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		AB561A991569E72F00BA8CC3 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		AB561A9A1569E72F00BA8CC3 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		AB561A9B1569E72F00BA8CC3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		AB561A9C1569E72F00BA8CC3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		AB9EEEF41569E31700481D90 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		AB9EEEF71569E33B00481D90 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
 		ABD826361533803A009733C7 /* wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +96,7 @@
 		AB3CE3C8151802A300D49806 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB3CE3C7151802A300D49806 /* Timer.app */,
+				AB3CE3C7151802A300D49806 /* raDial Timer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,10 +130,10 @@
 		AB3CE3D2151802A300D49806 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AB3CE3D3151802A300D49806 /* Timer-Info.plist */,
+				AB3CE3D3151802A300D49806 /* raDial Timer-Info.plist */,
 				AB3CE3D4151802A300D49806 /* InfoPlist.strings */,
 				AB3CE3D7151802A300D49806 /* main.m */,
-				AB3CE3D9151802A300D49806 /* Timer-Prefix.pch */,
+				AB3CE3D9151802A300D49806 /* raDial Timer-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,6 +141,19 @@
 		ABD826341533801B009733C7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB47A5F1156D7FAD0073343F /* background.png */,
+				AB47A5F2156D7FAD0073343F /* background@2x.png */,
+				AB561A971569E72F00BA8CC3 /* Icon-72.png */,
+				AB561A981569E72F00BA8CC3 /* Icon-Small-50.png */,
+				AB561A991569E72F00BA8CC3 /* Icon-Small.png */,
+				AB561A9A1569E72F00BA8CC3 /* Icon-Small@2x.png */,
+				AB561A9B1569E72F00BA8CC3 /* Icon.png */,
+				AB561A9C1569E72F00BA8CC3 /* Icon@2x.png */,
+				AB9EEEF71569E33B00481D90 /* default@2x.png */,
+				AB9EEEF41569E31700481D90 /* default.png */,
+				AB00517F15588CEF001B57B6 /* wheelButton@2x.png */,
+				AB00517C155886BC001B57B6 /* wheelButton.png */,
+				AB0051811558B2C2001B57B6 /* wheel@2x.png */,
 				ABD826361533803A009733C7 /* wheel.png */,
 			);
 			name = Resources;
@@ -124,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB3CE3C6151802A300D49806 /* Timer */ = {
+		AB3CE3C6151802A300D49806 /* raDial Timer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB3CE3E5151802A300D49806 /* Build configuration list for PBXNativeTarget "Timer" */;
+			buildConfigurationList = AB3CE3E5151802A300D49806 /* Build configuration list for PBXNativeTarget "raDial Timer" */;
 			buildPhases = (
 				AB3CE3C3151802A300D49806 /* Sources */,
 				AB3CE3C4151802A300D49806 /* Frameworks */,
@@ -136,9 +175,9 @@
 			);
 			dependencies = (
 			);
-			name = Timer;
+			name = "raDial Timer";
 			productName = Timer;
-			productReference = AB3CE3C7151802A300D49806 /* Timer.app */;
+			productReference = AB3CE3C7151802A300D49806 /* raDial Timer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -151,7 +190,7 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = SuaveApps;
 			};
-			buildConfigurationList = AB3CE3C1151802A200D49806 /* Build configuration list for PBXProject "Timer" */;
+			buildConfigurationList = AB3CE3C1151802A200D49806 /* Build configuration list for PBXProject "raDial Timer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -163,7 +202,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB3CE3C6151802A300D49806 /* Timer */,
+				AB3CE3C6151802A300D49806 /* raDial Timer */,
 			);
 		};
 /* End PBXProject section */
@@ -176,6 +215,19 @@
 				AB3CE3D6151802A300D49806 /* InfoPlist.strings in Resources */,
 				AB3CE3E2151802A300D49806 /* JHViewController.xib in Resources */,
 				ABD826371533803A009733C7 /* wheel.png in Resources */,
+				AB00517D155886BC001B57B6 /* wheelButton.png in Resources */,
+				AB00518015588CEF001B57B6 /* wheelButton@2x.png in Resources */,
+				AB0051821558B2C2001B57B6 /* wheel@2x.png in Resources */,
+				AB9EEEF51569E31700481D90 /* default.png in Resources */,
+				AB9EEEF81569E33B00481D90 /* default@2x.png in Resources */,
+				AB561A9D1569E72F00BA8CC3 /* Icon-72.png in Resources */,
+				AB561A9E1569E72F00BA8CC3 /* Icon-Small-50.png in Resources */,
+				AB561A9F1569E72F00BA8CC3 /* Icon-Small.png in Resources */,
+				AB561AA01569E72F00BA8CC3 /* Icon-Small@2x.png in Resources */,
+				AB561AA11569E72F00BA8CC3 /* Icon.png in Resources */,
+				AB561AA21569E72F00BA8CC3 /* Icon@2x.png in Resources */,
+				AB47A5F3156D7FAD0073343F /* background.png in Resources */,
+				AB47A5F4156D7FAD0073343F /* background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,10 +316,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Timer/Timer-Prefix.pch";
-				INFOPLIST_FILE = "Timer/Timer-Info.plist";
+				GCC_PREFIX_HEADER = "Timer/raDial Timer-Prefix.pch";
+				INFOPLIST_FILE = "Timer/raDial Timer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "raDial Timer";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -276,10 +328,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Timer/Timer-Prefix.pch";
-				INFOPLIST_FILE = "Timer/Timer-Info.plist";
+				GCC_PREFIX_HEADER = "Timer/raDial Timer-Prefix.pch";
+				INFOPLIST_FILE = "Timer/raDial Timer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "raDial Timer";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -287,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB3CE3C1151802A200D49806 /* Build configuration list for PBXProject "Timer" */ = {
+		AB3CE3C1151802A200D49806 /* Build configuration list for PBXProject "raDial Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB3CE3E3151802A300D49806 /* Debug */,
@@ -296,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB3CE3E5151802A300D49806 /* Build configuration list for PBXNativeTarget "Timer" */ = {
+		AB3CE3E5151802A300D49806 /* Build configuration list for PBXNativeTarget "raDial Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB3CE3E6151802A300D49806 /* Debug */,

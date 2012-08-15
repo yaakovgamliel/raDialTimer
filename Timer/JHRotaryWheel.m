@@ -1,4 +1,4 @@
-//
+
 //  JHRotaryWheel.m
 //  Timer
 //
@@ -14,31 +14,181 @@
 - (void)setupTimer;
 - (void)drawTimerDisplay;
 - (float)calculateDistanceFromCenter:(CGPoint)point;
+- (int)totalNumberOfSeconds:(NSDate *)date;
+- (void)resetTimer;
 @end
 
 static float deltaAngle;
 float timerDisplayAmount = 0;
+int spinnerFinalSize = 265;
+int spinnerFullSize = 285;
+CALayer *timeLeftLayer;
+CAShapeLayer *maskLayer;
 
 // - conditions -
 // is timer counting down? (don't spin wheel if timer is running)
 BOOL countdownHasStarted = NO;
+BOOL animationsAreFinished = NO;
+BOOL startButtonHasAlreadyBeenPressed = NO;
 
 @implementation JHRotaryWheel
 
-@synthesize delegate, container, startTransform, timerDisplay, startButton;
+@synthesize delegate, container, startTransform, timerDisplay, startButton, pauseButton;
 
 - (id)initWithFrame:(CGRect)frame andDelegate:(id)del {
     if ((self = [super initWithFrame:frame])) {
         self.delegate = del;
+        [self drawBackground];
+        [self drawTimeLeft];
+        [self drawSetupTimeLeftLayerMask];
         [self drawWheel];
         [self drawTimerDisplay];
         [self drawStartButton];
+        [self drawPauseButton];
         [self setupTimer];
     }
     return self;
 }
 
+#pragma mark - Animations
+
+// animates bounds from 200 (hidden behind wheel) to full
+- (CABasicAnimation *)growBoundsAnimation {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"bounds"];
+    [animation setFromValue:[NSValue valueWithCGRect:CGRectMake(100, 100, 200, 200)]];
+    [animation setToValue:[NSValue valueWithCGRect:CGRectMake(100, 100, spinnerFullSize, spinnerFullSize)]];
+    [animation setBeginTime:0.0];
+    [animation setDuration:0.3];
+    return animation;
+}
+
+// animates cornerRadius from hidden to full
+- (CABasicAnimation *)growCornerRadiusAnimation {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
+    [animation setFromValue:[NSNumber numberWithInt:100]];
+    [animation setToValue:[NSNumber numberWithInt:spinnerFullSize/2]];
+    [animation setBeginTime:0.0];
+    [animation setDuration:0.3];
+    return animation;
+}
+
+// animates bounds from full to final (small bounce back)
+- (CABasicAnimation *)bounceBoundsAnimation {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"bounds"];
+    [animation setFromValue:[NSValue valueWithCGRect:CGRectMake(100, 100, spinnerFullSize, spinnerFullSize)]];
+    [animation setToValue:[NSValue valueWithCGRect:CGRectMake(100, 100, spinnerFinalSize, spinnerFinalSize)]];
+    [animation setBeginTime:0.3];
+    [animation setDuration:0.1];
+    return animation;
+}
+
+// animates cornerRadius from full to final (small bounce back)
+- (CABasicAnimation *)bounceCornerRadiusAnimation {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
+    [animation setFromValue:[NSNumber numberWithInt:spinnerFullSize/2]];
+    [animation setToValue:[NSNumber numberWithInt:spinnerFinalSize/2]];
+    [animation setBeginTime:0.3];
+    [animation setDuration:0.1];
+    return animation;
+}
+
+// animates bounds completely away (hidden behind wheel)
+- (CABasicAnimation *)shrinkBoundsAnimation {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"bounds"];
+    [animation setFromValue:[NSValue valueWithCGRect:CGRectMake(100, 100, spinnerFinalSize, spinnerFinalSize)]];
+    [animation setToValue:[NSValue valueWithCGRect:CGRectMake(100, 100, 200, 200)]];
+    [animation setBeginTime:0.5];
+    [animation setDuration:0.6];
+    return animation;
+}
+
+// animates cornerRadius completely away (hidden behind wheel)
+- (CABasicAnimation *)shrinkCornerRadiusAnimation {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
+    [animation setFromValue:[NSNumber numberWithInt:spinnerFinalSize/2]];
+    [animation setToValue:[NSNumber numberWithInt:100]];
+    [animation setBeginTime:0.5];
+    [animation setDuration:0.6];
+    return animation;
+}
+
 #pragma mark - Drawing Things
+
+- (void)drawBackground {
+    //self.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.png"]];
+    self.backgroundColor = UIColorFromRGB(0xe5e6c0);
+}
+
+- (void)drawTimeLeft {
+    
+    timeLeftLayer = [CALayer layer];
+    timeLeftLayer.bounds = CGRectMake(100, 100, 200, 200);
+    timeLeftLayer.position = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
+    timeLeftLayer.cornerRadius = 100.0;
+    //timeLeftLayer.backgroundColor = [UIColor blackColor].CGColor;
+    timeLeftLayer.backgroundColor = UIColorFromRGB(0x40677d).CGColor;
+    [self.layer addSublayer:timeLeftLayer];
+}
+
+// animation group for showing the spinner, with bounce
+- (void)animateGrowSpinner {
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    [animationGroup setAnimations:[NSArray arrayWithObjects:[self growBoundsAnimation], [self growCornerRadiusAnimation], [self bounceBoundsAnimation], [self bounceCornerRadiusAnimation], nil]];
+    [animationGroup setDuration:0.4];
+    [animationGroup setRemovedOnCompletion:NO];
+    [animationGroup setFillMode:kCAFillModeForwards];
+    [timeLeftLayer addAnimation:animationGroup forKey:nil];
+    animationsAreFinished = YES;
+}
+
+// animation group for hiding the spinner behind wheel
+- (void)animateShrinkSpinner {
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    [animationGroup setAnimations:[NSArray arrayWithObjects:[self shrinkBoundsAnimation], [self shrinkCornerRadiusAnimation], nil]];
+    [animationGroup setDuration:0.6];
+    [animationGroup setRemovedOnCompletion:NO];
+    [animationGroup setFillMode:kCAFillModeForwards];
+    [animationGroup setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
+    [timeLeftLayer addAnimation:animationGroup forKey:nil];
+}
+
+- (void)drawSetupTimeLeftLayerMask {
+    maskLayer = [CAShapeLayer layer];
+    CGFloat maskHeight = timeLeftLayer.bounds.size.height+spinnerFinalSize;
+    CGFloat maskWidth = timeLeftLayer.bounds.size.height+spinnerFinalSize;
+    CGPoint centerPoint = CGPointMake(maskWidth/2, maskHeight/2);
+    CGFloat radius = sqrtf(maskWidth * maskWidth + maskHeight * maskHeight)/2;
+    maskLayer.fillColor = [[UIColor clearColor] CGColor];
+    maskLayer.strokeColor = [[UIColor blackColor] CGColor];
+    maskLayer.lineWidth = radius;
+    CGMutablePathRef arcPath = CGPathCreateMutable();
+    CGPathMoveToPoint(arcPath, nil, centerPoint.x, centerPoint.y-radius/2);
+    CGPathAddArc(arcPath, nil, centerPoint.x, centerPoint.y, radius/2, 3*M_PI/2, -M_PI/2, NO);
+    maskLayer.path = arcPath;
+    maskLayer.strokeEnd = 1.0;
+    CFRelease(arcPath);
+    timeLeftLayer.mask = maskLayer;
+    timeLeftLayer.mask.frame = self.bounds;
+}
+
+- (void)animateTimeLeftLayerMask:(float)timeToSpin withStrokeEndFromValue:(float)strokeEndFromValue {
+    CABasicAnimation *sweep = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    // I love this little BOOL logic trick here...delay the spinner animation if countdown has started (before start press),
+    // don't delay animation on reset. Love the reuse of BOOL variables, and the '!' negator for different answers/results.
+    // Magical.
+    sweep.beginTime = CACurrentMediaTime() + (!countdownHasStarted * 0.4);
+    sweep.duration = timeToSpin - 0.4;
+    sweep.delegate = self;
+    sweep.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    sweep.fillMode = kCAFillModeForwards;
+    sweep.autoreverses = NO;
+    sweep.removedOnCompletion = NO;
+    sweep.fromValue = [NSNumber numberWithFloat:strokeEndFromValue];
+    // NSLog(@"%f",strokeEndFromValue);
+    sweep.toValue = [NSNumber numberWithFloat:0.0];
+
+    [maskLayer addAnimation:sweep forKey:@"strokeEnd"];
+}
 
 - (void)drawWheel {
     container = [[UIView alloc] initWithFrame:self.frame];
@@ -46,16 +196,17 @@ BOOL countdownHasStarted = NO;
     UIImageView *wheelView = [[UIImageView alloc] initWithImage:wheel];
     wheelView.layer.anchorPoint = CGPointMake(0.5f, 0.5f);
     wheelView.layer.position = CGPointMake(container.bounds.size.width/2.0, container.bounds.size.height/2.0);
+    wheelView.clipsToBounds = NO;
     [container addSubview:wheelView];
     container.userInteractionEnabled = NO;
     [self addSubview:container];
 }
 
 - (void)drawTimerDisplay {
-    timerDisplay = [[UILabel alloc] initWithFrame:CGRectMake(0,10,320,75)];
+    timerDisplay = [[UILabel alloc] initWithFrame:CGRectMake(0,0,320,75)];
     timerDisplay.textAlignment = UITextAlignmentCenter;
     timerDisplay.backgroundColor = [UIColor clearColor];
-    timerDisplay.textColor = [UIColor blackColor];
+    timerDisplay.textColor = UIColorFromRGB(0x272929);
     [timerDisplay setFont:[UIFont fontWithName:@"Helvetica-Bold" size:70.0]];
     timerDisplay.text = @"00:00:00";
     timerDisplay.tag = 1;
@@ -63,15 +214,46 @@ BOOL countdownHasStarted = NO;
 }
 
 - (void)drawStartButton {
-    startButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [startButton addTarget:self action:@selector(startButtonPressed) forControlEvents:UIControlEventTouchDown];
+    startButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    startButton.frame = CGRectMake(320/2-45, 480/2-45, 90, 90);
+    [[startButton layer] setCornerRadius:50.0f];
+    
+    // startButton shadow
+    //startButton.clipsToBounds = YES;
+    //startButton.layer.masksToBounds = NO;
+    startButton.layer.shadowColor = [UIColor whiteColor].CGColor;
+    startButton.layer.shadowOpacity = 0.75;
+    startButton.layer.shadowRadius = 2;
+    startButton.layer.shadowOffset = CGSizeMake(0.0, 0.0);
+    //startButton.layer.borderColor = [UIColor blueColor].CGColor;
+    //startButton.layer.borderWidth = 1.0;
+    
+    // startButton.title shadow
+    [startButton.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:20]];
     [startButton setTitle:@"Start" forState:UIControlStateNormal];
-    startButton.frame = CGRectMake(self.frame.size.width/2 - 25, self.frame.size.height - 60, 50, 30);
+    startButton.titleLabel.layer.shadowColor = [UIColor blueColor].CGColor;
+    startButton.titleLabel.layer.shadowOffset = CGSizeMake(0.0, 0.0);
+    startButton.titleLabel.layer.shadowOpacity = 1.0;
+    startButton.titleLabel.layer.shadowRadius = 4.0;
+    startButton.titleLabel.layer.masksToBounds = NO;
+    
+    [startButton addTarget:self action:@selector(startButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [startButton setBackgroundImage:[UIImage imageNamed:@"wheelButton.png"] forState:UIControlStateNormal];
+    
     [self addSubview:startButton];
+}
+
+- (void)drawPauseButton {
+    pauseButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    pauseButton.frame = CGRectMake(0, 0, 320, 70);
+    pauseButton.layer.opaque = NO;
+    [pauseButton addTarget:self action:@selector(pauseButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:pauseButton];
 }
 
 #pragma mark - Timer Setup & Maintenence
 
+// Initialize the timer, set the format, set display to 00:00:00
 - (void)setupTimer {
     NSDateComponents *comps = [[NSDateComponents alloc] init];
     [comps setHour:0];
@@ -83,43 +265,89 @@ BOOL countdownHasStarted = NO;
     [dateFormatter setDateFormat:@"HH:mm:ss"];
     NSString *timerString = [dateFormatter stringFromDate:currentDate];
     timerDisplay.text = timerString;
-
-    //turning the wheel increases/decreases the amount of time set on the timer
-    //pushing the start button starts the countdown
-    //  -figure out current time, time elapsed since start was pushed, then subtract that
-    //   from the timer amount. Hopefully there's an easy way to subtract NSDates
-    //   Might need to setTimeWithInterval (or whatever) with number of seconds
-    //pushing stop button pauses the countdown
 }
 
+// Set display to currentDate
 - (void)updateTimer {
     [dateFormatter setDateFormat:@"HH:mm:ss"];
     NSString *timerString = [dateFormatter stringFromDate:currentDate];
     timerDisplay.text = timerString;
 }
 
+// Function is called every second, after startButtonPressed
+// Subtracts 1.0 seconds from currentDate, updates display, checks if we are at 0 (if so, resetTimer)
 - (void)startCountdown {
-    // somehow stop wheel controls so you can't change time while counting down
-    // set up alert
-    // countdown?
-    // needs to be some code to handle if the app is closed. 
-    //      when started, figure out the exact time when this timer will be done
-    //      set an alert for this time, use as reference to update timer when restarted
     countdownHasStarted = YES;
-    currentDate = [currentDate dateByAddingTimeInterval:-1.0/10];
+    currentDate = [currentDate dateByAddingTimeInterval:-1.0];
     [self updateTimer];
+    if ([self totalNumberOfSeconds:currentDate] == 0) {
+        [self resetTimer];
+    }
 }
 
-- (void)startButtonPressed {
-    // this timer should 'countdown' the current date by 1 second every second.
-    if (countdownHasStarted == NO) {
-        stopWatchTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/10
-                                                          target:self
-                                                        selector:@selector(startCountdown)
-                                                        userInfo:nil 
-                                                         repeats:YES];
-    }
+- (void)setupAlert {
+    UILocalNotification *timerDone = [[UILocalNotification alloc] init];
+    if (timerDone == nil)
+        return;
+    timerDone.fireDate = [[NSDate date] dateByAddingTimeInterval:[self totalNumberOfSeconds:currentDate]];
+    timerDone.timeZone = [NSTimeZone defaultTimeZone];
+    timerDone.soundName = UILocalNotificationDefaultSoundName;
+    timerDone.alertBody = @"Timer Done!";
+    //timerDone.alertAction = @"Get it";
+    timerDone.hasAction = NO;
+    [[UIApplication sharedApplication] scheduleLocalNotification:timerDone];
+    
+}
 
+/*
+
+ WHAT TO DO WHEN APP GETS CLOSED.
+ need to keep time, and set off alarm if time is up, even if app is closed.
+ best way is to set up a local notification to be fired when the timer is up, and make is fire whether the app is running or not (research how that works)
+ when resuming, all that needs to be done is adjust the timer and the spinner to be at the right place
+ 
+ 1) local notifications: set up when start, cancel when reset. Fire at time up, whether app is open or closed
+ 2) adjust time display and spinner when resuming
+ 3) if app is completely closed, should the timer cancel? No. So, when first launching, app should check to see if there are any 'stray' timers running
+    and use that timer's information to adjust. Fringe case, but needs to be addressed. Is there a 'global place' to store this timer-running data?
+ 4) Different situations for alert based on if app is running or not.
+    Not running: sound, local alert with dismissal button
+    Running: sound, maybe an animation of the wheel (pulsing, different color (red), etc)
+ 
+*/
+
+#pragma mark - Pressing Buttons
+
+- (void)startButtonPressed {    
+    if (countdownHasStarted == NO) {
+        if (startButtonHasAlreadyBeenPressed == NO) {
+            if ([self totalNumberOfSeconds:currentDate] > 0) {
+                stopWatchTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                                  target:self
+                                                                selector:@selector(startCountdown)
+                                                                userInfo:nil 
+                                                                 repeats:YES];
+                [startButton setTitle:@"Reset" forState:UIControlStateNormal];
+                [self animateGrowSpinner];
+                [self animateTimeLeftLayerMask:([self totalNumberOfSeconds:currentDate]) withStrokeEndFromValue:1.0];
+                [self setupAlert];
+                // NSLog(@"totalNumberOfSeconds:%i", [self totalNumberOfSeconds:currentDate]);
+                startButtonHasAlreadyBeenPressed = YES;
+            }
+        }
+    }
+    if (countdownHasStarted == YES) {
+        // stop the timer
+        [self animateTimeLeftLayerMask:0.8 withStrokeEndFromValue:[[maskLayer presentationLayer] strokeEnd]];
+        [self resetTimer];
+    }
+}
+
+- (void)pauseButtonPressed {
+    if (countdownHasStarted == YES) {
+        // NSLog(@"Timer Paused");
+        // pause the timer
+    }
 }
 
 #pragma mark - Touch Controls
@@ -128,8 +356,8 @@ BOOL countdownHasStarted = NO;
     
     CGPoint touchPoint = [touch locationInView:self];
     float dist = [self calculateDistanceFromCenter:touchPoint];
-    if (dist < 40 || dist > 100) {
-        NSLog(@"Ignoring tap (%f, %f)", touchPoint.x, touchPoint.y);
+    if (dist < 30 || dist > 100) {
+        // NSLog(@"Ignoring tap (%f, %f)", touchPoint.x, touchPoint.y);
         return  NO;
     }
     float dx = touchPoint.x - container.center.x;
@@ -144,8 +372,8 @@ BOOL countdownHasStarted = NO;
     CGPoint pt = [touch locationInView:self];
     CGPoint previousPt = [touch previousLocationInView:self];
     float dist = [self calculateDistanceFromCenter:pt];
-    if (dist < 40) {
-        NSLog(@"Movement cancelled, too close to center");
+    if (dist < 30) {
+        // NSLog(@"Movement cancelled, too close to center");
         return NO;
     }
     float dx = pt.x - container.center.x;
@@ -163,10 +391,57 @@ BOOL countdownHasStarted = NO;
         float preDy = previousPt.y - container.center.y;
         float preAng = atan2(preDy, preDx);
         
-        //compare touch to previous touch to determine which direction wheel is spinning
-        if (preAng < ang) [self addValue:1.0];
-        if (preAng > ang) [self subValue:1.0];
-    
+        // ================================================================================================================
+        // This lovely block of code here is not exactly what I want, but it works (for now)
+        // check the distance between the current touch point and the (just) previous touch point
+        // first, make sure we aren't at the 9 o'clock position, where the 'ang' variable makes a huge jump from 0 to 2M_PI
+        // Then check if the wheel is spinning clockwise or counterclockwise
+        // The distance between ang and preAng determines how much we add to the currentDate timer
+        // some quick and dirty fixes for subtracting 10 when the timer is less than 10
+        //      (prevents looping back to 23:59:59, etc)
+        // ================================================================================================================
+        
+        if (fabsf(ang-preAng) < 1) {
+            if (ang > preAng) {
+                if (ang - preAng < 0.05) {
+                    [self addValue:0.1];
+                    // NSLog(@"addValue:0.1");
+                }
+                if (ang - preAng > 0.05 && ang - preAng < 0.2) {
+                    [self addValue:5.0];
+                    // NSLog(@"addValue:5.0");
+                }
+                if (ang - preAng > 0.2) {
+                    [self addValue:10.0];
+                    // NSLog(@"addValue:10.0");
+                }
+            }
+            if (ang < preAng) {
+                if (preAng - ang < 0.05) {
+                    [self subValue:0.1];
+                    // NSLog(@"subValue:0.1");
+                }
+                if (preAng - ang > 0.05 && preAng - ang < 0.2) {
+                    if ([self totalNumberOfSeconds:currentDate] > 5) {
+                        [self subValue:5.0];
+                        // NSLog(@"subValue:5.0");
+                    }else {
+                        [self subValue:1.0];
+                        // NSLog(@"subValue:1.0(2.2)");
+                    }
+                }
+                if (preAng - ang > 0.2) {
+                    if ([self totalNumberOfSeconds:currentDate] > 10) {     // putting out fires...
+                        [self subValue:10.0];
+                        // NSLog(@"subValue:10.0");
+                    }else {
+                        [self subValue:1.0];
+                        // NSLog(@"subValue:1.0(2)");
+                    }
+                }
+            }
+        }
+
     }
     return YES;
     // 4/1/2012
@@ -178,36 +453,56 @@ BOOL countdownHasStarted = NO;
     // also need to fix the bug at the left side of wheel (9 o'clock) where it will add/sub weirdly
 }
 
-#pragma mark - Miscellaneous Functions
+#pragma mark - Helper Functions
 
 - (float)calculateDistanceFromCenter:(CGPoint)point {
     CGPoint center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
-    //NSLog(@"CENTER is at (%f, %f)", center.x, center.y);
+    //// NSLog(@"CENTER is at (%f, %f)", center.x, center.y);
     float dx = point.x - center.x;
     float dy = point.y - center.y;
     return sqrt(dx*dx + dy*dy);
 }
 
+- (int)totalNumberOfSeconds:(NSDate *)date {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *comps = [calendar components:NSHourCalendarUnit|NSMinuteCalendarUnit|NSSecondCalendarUnit fromDate:date];
+    int hours = [comps hour];
+    int minutes = [comps minute];
+    int seconds = [comps second];
+    int allSeconds = seconds + 60*minutes + 60*60*hours;
+    if (allSeconds < 1) allSeconds = 0;
+    return allSeconds;
+}
+
 - (void)addValue:(float)value{
     // could set a max time here, check the same way as subValue
-    currentDate = [currentDate dateByAddingTimeInterval:1.0];
+    currentDate = [currentDate dateByAddingTimeInterval:value];
+    // NSLog(@"currentDate:%i",[self totalNumberOfSeconds:currentDate]);
     [self updateTimer];
 }
 
 - (void)subValue:(float)value{
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *comps = [calendar components:NSHourCalendarUnit|NSMinuteCalendarUnit|NSSecondCalendarUnit fromDate:currentDate];
-    int hours = [comps hour];
-    int minutes = [comps minute];
-    int seconds = [comps second];
-    int totalSeconds = seconds + 60*minutes + 60*60*hours;
-    //NSLog(@"H:%i M:%i S:%i", hours, minutes, seconds);
-    //NSLog(@"totalSeconds:%i", totalSeconds);
-
-    if (totalSeconds > 0) {
-        currentDate = [currentDate dateByAddingTimeInterval:-1.0];
+    if ([self totalNumberOfSeconds:currentDate] > 0.0) {
+        currentDate = [currentDate dateByAddingTimeInterval:-value];
+        // NSLog(@"currentDate:%i",[self totalNumberOfSeconds:currentDate]);
         [self updateTimer];
     }
+}
+
+- (void)resetTimer{
+    [startButton setTitle:@"Start" forState:UIControlStateNormal];
+    [stopWatchTimer invalidate];
+    stopWatchTimer = nil;
+    if (countdownHasStarted == YES) {
+        [self animateShrinkSpinner];
+    }
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    countdownHasStarted = NO;
+    animationsAreFinished = NO;
+    startButtonHasAlreadyBeenPressed = NO;
+    container.transform = CGAffineTransformIdentity;
+    [self setupTimer];
+    [self updateTimer];
 }
 
 @end
