@@ -1,6 +1,6 @@
 2012-August-14
 
-raDial Timer - Jonathan Hirz - jonathanhirz.com
+raDial Timer - **Jonathan Hirz** - [jonathanhirz.com](http://jonathanhirz.com)
 
 I reached a screeching halt in this project when I realised that there is an unavoidable usability problem with the way alerts & local notifications are displayed to the user. I am bummed that this small problem has stopped me from finishing the project, but it is only temporary. I may finish it at some other time, for now I'd like to just get it up in my portfolio, because the work that is done is pretty cool.
 
