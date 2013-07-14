@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9A3DEF7171D708B00F8B057 /* YGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A3DEF5171D708B00F8B057 /* YGViewController.m */; };
+		A9A3DEF8171D708B00F8B057 /* YGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A3DEF6171D708B00F8B057 /* YGViewController.xib */; };
 		AB00517D155886BC001B57B6 /* wheelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AB00517C155886BC001B57B6 /* wheelButton.png */; };
 		AB00518015588CEF001B57B6 /* wheelButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB00517F15588CEF001B57B6 /* wheelButton@2x.png */; };
 		AB0051821558B2C2001B57B6 /* wheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0051811558B2C2001B57B6 /* wheel@2x.png */; };
@@ -34,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9A3DEF4171D708B00F8B057 /* YGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGViewController.h; sourceTree = "<group>"; };
+		A9A3DEF5171D708B00F8B057 /* YGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGViewController.m; sourceTree = "<group>"; };
+		A9A3DEF6171D708B00F8B057 /* YGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGViewController.xib; sourceTree = "<group>"; };
 		AB00517C155886BC001B57B6 /* wheelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheelButton.png; sourceTree = "<group>"; };
 		AB00517F15588CEF001B57B6 /* wheelButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheelButton@2x.png"; sourceTree = "<group>"; };
 		AB0051811558B2C2001B57B6 /* wheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel@2x.png"; sourceTree = "<group>"; };
@@ -85,7 +90,6 @@
 		AB3CE3BC151802A200D49806 = {
 			isa = PBXGroup;
 			children = (
-				AB3CE3EC1518098F00D49806 /* QuartzCore.framework */,
 				AB3CE3D1151802A300D49806 /* Timer */,
 				ABD826341533801B009733C7 /* Resources */,
 				AB3CE3CA151802A300D49806 /* Frameworks */,
@@ -104,6 +108,7 @@
 		AB3CE3CA151802A300D49806 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB3CE3EC1518098F00D49806 /* QuartzCore.framework */,
 				AB3CE3CB151802A300D49806 /* UIKit.framework */,
 				AB3CE3CD151802A300D49806 /* Foundation.framework */,
 				AB3CE3CF151802A300D49806 /* CoreGraphics.framework */,
@@ -118,6 +123,9 @@
 				AB3CE3DB151802A300D49806 /* JHAppDelegate.m */,
 				AB3CE3DD151802A300D49806 /* JHViewController.h */,
 				AB3CE3DE151802A300D49806 /* JHViewController.m */,
+				A9A3DEF4171D708B00F8B057 /* YGViewController.h */,
+				A9A3DEF5171D708B00F8B057 /* YGViewController.m */,
+				A9A3DEF6171D708B00F8B057 /* YGViewController.xib */,
 				AB3CE3E81518061500D49806 /* JHRotaryWheel.h */,
 				AB3CE3E91518061500D49806 /* JHRotaryWheel.m */,
 				AB3CE3EB1518063900D49806 /* JHRotaryWheelProtocol.h */,
@@ -228,6 +236,7 @@
 				AB561AA21569E72F00BA8CC3 /* Icon@2x.png in Resources */,
 				AB47A5F3156D7FAD0073343F /* background.png in Resources */,
 				AB47A5F4156D7FAD0073343F /* background@2x.png in Resources */,
+				A9A3DEF8171D708B00F8B057 /* YGViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +251,7 @@
 				AB3CE3DC151802A300D49806 /* JHAppDelegate.m in Sources */,
 				AB3CE3DF151802A300D49806 /* JHViewController.m in Sources */,
 				AB3CE3EA1518061500D49806 /* JHRotaryWheel.m in Sources */,
+				A9A3DEF7171D708B00F8B057 /* YGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,11 +325,13 @@
 		AB3CE3E6151802A300D49806 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yaakov gamliel (T742JYN9NP)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Timer/raDial Timer-Prefix.pch";
 				INFOPLIST_FILE = "Timer/raDial Timer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "raDial Timer";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F0D6EC7A-7467-49B4-836E-FA59CF73BA44";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -330,7 +342,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Timer/raDial Timer-Prefix.pch";
 				INFOPLIST_FILE = "Timer/raDial Timer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "raDial Timer";
 				WRAPPER_EXTENSION = app;
 			};

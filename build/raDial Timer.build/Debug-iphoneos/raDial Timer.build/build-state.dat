@@ -1,0 +1,753 @@
+TraDial Timer
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Info.plist" "Timer/raDial Timer-Info.plist"
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist "build/Debug-iphoneos/raDial Timer.app/ResourceRules.plist"
+cProcessPCH "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch.pth" "Timer/raDial Timer-Prefix.pch" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch.pth" "Timer/raDial Timer-Prefix.pch" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHAppDelegate.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/main.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/main.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHRotaryWheel.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHViewController.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHAppDelegate.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHViewController.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHRotaryWheel.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/raDial Timer" normal armv7
+cLd "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/raDial Timer" normal armv7s
+cCreateUniversalBinary "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/raDial Timer" normal "armv7 armv7s"
+cGenerateDSYMFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app.dSYM" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/raDial Timer"
+cCopyStringsFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/en.lproj/InfoPlist.strings" Timer/en.lproj/InfoPlist.strings
+cCompileXIB /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/en.lproj/JHViewController.xib
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheel.png" Timer/wheel.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheelButton.png" Timer/wheelButton.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheelButton@2x.png" Timer/wheelButton@2x.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheel@2x.png" Timer/wheel@2x.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/default@2x.png" Timer/default@2x.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/default.png" Timer/default.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small.png" Timer/Icon-Small.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-72.png" Timer/Icon-72.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small-50.png" Timer/Icon-Small-50.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small@2x.png" Timer/Icon-Small@2x.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon@2x.png" Timer/Icon@2x.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon.png" Timer/Icon.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/background.png" Timer/background.png
+cCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/background@2x.png" Timer/background@2x.png
+cProcessProductPackaging "/Users/yaakovgamliel/Library/MobileDevice/Provisioning Profiles/F0D6EC7A-7467-49B4-836E-FA59CF73BA44.mobileprovision" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/embedded.mobileprovision"
+cProcessProductPackaging "/Users/yaakovgamliel/Library/MobileDevice/Provisioning Profiles/F0D6EC7A-7467-49B4-836E-FA59CF73BA44.mobileprovision" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/embedded.mobileprovision"
+cTouch "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app"
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer.xcent"
+cCodeSign "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app"
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c000000005144D4DA0000000000000110
+t1363465434
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+c00000000512F76E700000000000001A7
+t1362065127
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+c00000000512F76E700000000000001E5
+t1362065127
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000512F76E90000000000322700
+t1362065129
+s3286784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000512F76EB000000000062AD10
+t1362065131
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000512F76EB00000000003596B0
+t1362065131
+s3511984
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000512F76EE00000000011BCDF0
+t1362065134
+s18599408
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-72.png
+c00000000516D21A20000000000001521
+t1366106530
+s5409
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-Small-50.png
+c00000000516D21A20000000000000F7B
+t1366106530
+s3963
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-Small.png
+c00000000516D21A2000000000000096E
+t1366106530
+s2414
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-Small@2x.png
+c00000000516D21A2000000000000112B
+t1366106530
+s4395
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon.png
+c00000000516D21A20000000000001059
+t1366106530
+s4185
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon@2x.png
+c00000000516D21A20000000000001C08
+t1366106530
+s7176
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.h
+c00000000516D21A20000000000000172
+t1366106530
+s370
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m
+c00000000516D28290000000000000A19
+t1366108201
+s2585
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.h
+c00000000516D21A2000000000000039A
+t1366106530
+s922
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m
+c00000000516D21A20000000000005247
+t1366106530
+s21063
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheelProtocol.h
+c00000000516D21A20000000000000118
+t1366106530
+s280
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.h
+c00000000516D21A200000000000000D9
+t1366106530
+s217
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m
+c00000000516D28290000000000000628
+t1366108201
+s1576
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/background.png
+c00000000516D21A20000000000000B4A
+t1366106530
+s2890
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/background@2x.png
+c00000000516D21A2000000000000146C
+t1366106530
+s5228
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/default.png
+c00000000516D21A20000000000004265
+t1366106530
+s16997
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/default@2x.png
+c00000000516D21A2000000000000704A
+t1366106530
+s28746
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/en.lproj/InfoPlist.strings
+c00000000516D21A2000000000000002D
+t1366106530
+s45
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/en.lproj/JHViewController.xib
+c00000000516D274600000000000015C2
+t1366107974
+s5570
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m
+c00000000516D21A20000000000000152
+t1366106530
+s338
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/raDial Timer-Prefix.pch
+c00000000516D21A20000000000000139
+t1366106530
+s313
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheel.png
+c00000000516D21A200000000000027D0
+t1366106530
+s10192
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheel@2x.png
+c00000000516D21A20000000000005DE3
+t1366106530
+s24035
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheelButton.png
+c00000000516D21A200000000000010B2
+t1366106530
+s4274
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheelButton@2x.png
+c00000000516D21A20000000000001B4F
+t1366106530
+s6991
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app
+t1366108004
+s782
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app.dSYM
+t1366108003
+s102
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-72.png
+t1366107551
+s5532
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small-50.png
+t1366107551
+s3480
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small.png
+t1366107551
+s2057
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small@2x.png
+t1366107551
+s3727
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon.png
+t1366107551
+s3842
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon@2x.png
+t1366107551
+s6541
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Info.plist
+t1366107550
+s1083
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/PkgInfo
+t1366107550
+s8
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/ResourceRules.plist
+t1366107550
+s485
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/background.png
+t1366107551
+s2803
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/background@2x.png
+t1366107551
+s5311
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/default.png
+t1366107551
+s18800
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/default@2x.png
+t1366107551
+s36445
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/embedded.mobileprovision
+t1366107551
+s7401
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/en.lproj/InfoPlist.strings
+t1366107551
+s42
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/en.lproj/JHViewController.nib
+t1366108004
+s862
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/raDial Timer
+t1366108004
+s155968
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheel.png
+t1366107551
+s8577
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheel@2x.png
+t1366107551
+s20247
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheelButton.png
+t1366107551
+s3486
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheelButton@2x.png
+t1366107551
+s5606
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHAppDelegate.o
+t1366108003
+s90092
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHRotaryWheel.o
+t1366107551
+s143604
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHViewController.o
+t1366107551
+s73432
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/main.o
+t1366107551
+s3408
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/raDial Timer
+t1366108003
+s63908
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/raDial Timer.LinkFileList
+c00000000516D259E000000000000023A
+t1366107550
+s570
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHAppDelegate.o
+t1366108003
+s90092
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHRotaryWheel.o
+t1366107551
+s143488
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHViewController.o
+t1366107551
+s73432
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/main.o
+t1366107551
+s3408
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/raDial Timer
+t1366108003
+s63864
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/raDial Timer.LinkFileList
+c00000000516D259E000000000000023E
+t1366107550
+s574
+
+N/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer.xcent
+t1366107551
+s426
+
+N/Users/yaakovgamliel/Library/MobileDevice/Provisioning Profiles/F0D6EC7A-7467-49B4-836E-FA59CF73BA44.mobileprovision
+c00000000512F90EC0000000000001CE9
+t1362071788
+s7401
+
+N/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch.pth
+t1366107551
+s4603424
+
+N/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch.pth
+t1366107551
+s4603472
+
+NTimer/raDial Timer-Info.plist
+c00000000516D21A200000000000004AE
+t1366106530
+s1198
+
+CBuild AST from /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m
+r0
+
+CBuild AST from /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m
+r0
+
+CBuild AST from /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m
+r0
+
+CBuild AST from /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies8750e1a95f1db741^f772e3a95f1db741^---0#1#0#--18"Check dependencies36"77D9BA45-33BF-4672-9859-E0D6C77731D6-
+
+CCodeSign "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app"
+s387801002.208358
+e387801002.417633
+r1
+xCodeSign
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"CodeSign "build/Debug-iphoneos/raDial Timer.app"c76835aa5f1db741^b8ea6aaa5f1db741^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial%20Timer.app/0000000000000000^862"CodeSign "build/Debug-iphoneos/raDial Timer.app"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign c1c5b51c5923d43b3411d0caf55292c485c3cced "--resource-rules=/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/ResourceRules.plist" --entitlements "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer.xcent" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app"36"14F02952-4CE7-4452-A0C1-76DBE1B8CAE4-
+
+CCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHAppDelegate.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387801001.906090
+e387801002.014077
+r1
+xCompileC
+xbuild/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHAppDelegate.o
+x/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.mea23e8a95f1db741^e99803aa5f1db741^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m0000000000000000^3524"CompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHAppDelegate.o" Timer/JHAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-generated-files.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-own-target-headers.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-all-target-headers.hmap" -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-project-headers.hmap" -I/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources/armv7" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources" -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -include "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch" -MMD -MT dependencies -MF "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHAppDelegate.d" --serialize-diagnostics "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHAppDelegate.dia" -c /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHAppDelegate.o"36"D276B237-F099-4A7F-AAD0-3E5AE942DB31-
+
+CCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHRotaryWheel.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387800351.132398
+e387800351.347308
+r1
+xCompileC
+xbuild/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHRotaryWheel.o
+x/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m800f221f5d1db741^92e9581f5d1db741^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m0000000000000000^3524"CompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHRotaryWheel.o" Timer/JHRotaryWheel.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-generated-files.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-own-target-headers.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-all-target-headers.hmap" -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-project-headers.hmap" -I/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources/armv7" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources" -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -include "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch" -MMD -MT dependencies -MF "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHRotaryWheel.d" --serialize-diagnostics "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHRotaryWheel.dia" -c /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHRotaryWheel.o"36"2FED84CF-D3B0-4D37-8BB0-D37B7BED19F4-
+
+CCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHViewController.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387801001.907486
+e387801002.026526
+r1
+xCompileC
+xbuild/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHViewController.o
+x/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m0473e8a95f1db741^f7c806aa5f1db741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m0000000000000000^3542"CompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHViewController.o" Timer/JHViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-generated-files.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-own-target-headers.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-all-target-headers.hmap" -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-project-headers.hmap" -I/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources/armv7" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources" -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -include "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch" -MMD -MT dependencies -MF "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHViewController.d" --serialize-diagnostics "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHViewController.dia" -c /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/JHViewController.o"36"855A66B8-B285-4145-8749-D479CB37D041-
+
+CCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/main.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387800351.132419
+e387800351.167855
+r1
+xCompileC
+xbuild/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/main.o
+x/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m1211221f5d1db741^90f72a1f5d1db741^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m0000000000000000^3470"CompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/main.o" Timer/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-generated-files.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-own-target-headers.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-all-target-headers.hmap" -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-project-headers.hmap" -I/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources/armv7" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources" -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -include "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch" -MMD -MT dependencies -MF "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/main.d" --serialize-diagnostics "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/main.dia" -c /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/main.o"36"4B15374D-CBCF-45E9-8C07-9105256E9131-
+
+CCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHAppDelegate.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387801001.907484
+e387801002.021444
+r1
+xCompileC
+xbuild/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHAppDelegate.o
+x/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m2270e8a95f1db741^3d7c05aa5f1db741^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m0000000000000000^3531"CompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHAppDelegate.o" Timer/JHAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-generated-files.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-own-target-headers.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-all-target-headers.hmap" -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-project-headers.hmap" -I/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources/armv7s" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources" -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -include "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch" -MMD -MT dependencies -MF "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHAppDelegate.d" --serialize-diagnostics "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHAppDelegate.dia" -c /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHAppDelegate.m -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHAppDelegate.o"36"E749C5A2-A040-41F0-B56F-D4A8E7CF8548-
+
+CCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHRotaryWheel.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387800351.238209
+e387800351.413397
+r1
+xCompileC
+xbuild/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHRotaryWheel.o
+x/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m512e3d1f5d1db741^ddd3691f5d1db741^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m0000000000000000^3531"CompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHRotaryWheel.o" Timer/JHRotaryWheel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-generated-files.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-own-target-headers.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-all-target-headers.hmap" -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-project-headers.hmap" -I/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources/armv7s" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources" -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -include "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch" -MMD -MT dependencies -MF "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHRotaryWheel.d" --serialize-diagnostics "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHRotaryWheel.dia" -c /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHRotaryWheel.m -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHRotaryWheel.o"36"993C113F-51FB-4CC4-BADD-51283D36724C-
+
+CCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHViewController.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387801001.907489
+e387801002.031980
+r1
+xCompileC
+xbuild/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHViewController.o
+x/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.mee77e8a95f1db741^402f08aa5f1db741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m0000000000000000^3549"CompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHViewController.o" Timer/JHViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-generated-files.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-own-target-headers.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-all-target-headers.hmap" -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-project-headers.hmap" -I/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources/armv7s" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources" -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -include "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch" -MMD -MT dependencies -MF "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHViewController.d" --serialize-diagnostics "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHViewController.dia" -c /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/JHViewController.m -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/JHViewController.o"36"20EAF9E8-0D86-4CA7-853D-756EA13F0B6B-
+
+CCompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/main.o" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387800351.169282
+e387800351.207333
+r1
+xCompileC
+xbuild/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/main.o
+x/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m3c862b1f5d1db741^cb12351f5d1db741^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m0000000000000000^3477"CompileC "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/main.o" Timer/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-generated-files.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-own-target-headers.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-all-target-headers.hmap" -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-project-headers.hmap" -I/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources/armv7s" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources" -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -include "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch" -MMD -MT dependencies -MF "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/main.d" --serialize-diagnostics "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/main.dia" -c /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/main.m -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/main.o"36"4FECF9AC-94D2-4691-8C40-D3DB0B8BA549-
+
+CCompileXIB /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/en.lproj/JHViewController.xib
+s387800803.915147
+e387800804.097584
+r1
+xCompileXIB
+x/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/en.lproj/JHViewController.xib
+o2013-04-16 13:26:44.073 Interface Builder Cocoa Touch Tool[1277:f07] CFPreferences: user home directory at file://localhost/Users/yaakovgamliel/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compiling /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/en.lproj/JHViewController.xib5b5deae35e1db741^af0519e45e1db741^-245"2013-04-16 13:26:44.073 Interface Builder Cocoa Touch Tool[1277:f07] CFPreferences: user home directory at file://localhost/Users/yaakovgamliel/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/en.lproj/JHViewController.xib0000000000000000^877"CompileXIB Timer/en.lproj/JHViewController.xib    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/en.lproj/JHViewController.nib" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/en.lproj/JHViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"DB58C40E-1486-4EB9-8D0D-C07448122D45-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-72.png" Timer/Icon-72.png
+s387800351.622463
+e387800351.709659
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-72.png
+xTimer/Icon-72.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon-72.png" Timer/Icon-72.png8e779f1f5d1db741^07b7b51f5d1db741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-72.png0000000000000000^605"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon-72.png" Timer/Icon-72.png    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-72.png "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-72.png"36"EDEFBF43-B1DC-40AF-9E59-E03C5222B863-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small-50.png" Timer/Icon-Small-50.png
+s387800351.710924
+e387800351.751766
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small-50.png
+xTimer/Icon-Small-50.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon-Small-50.png" Timer/Icon-Small-50.png5116b61f5d1db741^e272c01f5d1db741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-Small-50.png0000000000000000^629"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon-Small-50.png" Timer/Icon-Small-50.png    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-Small-50.png "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small-50.png"36"2DD80695-646E-4DDD-9C1E-AB2B69608B6E-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small.png" Timer/Icon-Small.png
+s387800351.713978
+e387800351.752644
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small.png
+xTimer/Icon-Small.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon-Small.png" Timer/Icon-Small.png09e0b61f5d1db741^e2acc01f5d1db741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-Small.png0000000000000000^617"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon-Small.png" Timer/Icon-Small.png    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-Small.png "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small.png"36"54CFC0D3-F0C5-43E3-95C6-3665730F1FFD-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small@2x.png" Timer/Icon-Small@2x.png
+s387800351.713969
+e387800351.755086
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small@2x.png
+xTimer/Icon-Small@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon-Small@2x.png" Timer/Icon-Small@2x.png61dfb61f5d1db741^d252c11f5d1db741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-Small@2x.png0000000000000000^633"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon-Small@2x.png" "Timer/Icon-Small@2x.png"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon-Small@2x.png" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon-Small@2x.png"36"97080009-D930-4FC1-A22D-5E8D8D824084-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon.png" Timer/Icon.png
+s387800351.753037
+e387800351.792349
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon.png
+xTimer/Icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon.png" Timer/Icon.png05dfc01f5d1db741^efe5ca1f5d1db741^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon.png0000000000000000^593"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon.png" Timer/Icon.png    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon.png "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon.png"36"F6E1863C-BFFC-455D-9A46-9F1763C5159E-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon@2x.png" Timer/Icon@2x.png
+s387800351.753030
+e387800351.799905
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon@2x.png
+xTimer/Icon@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon@2x.png" Timer/Icon@2x.png7adfc01f5d1db741^4bcbcc1f5d1db741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon@2x.png0000000000000000^609"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/Icon@2x.png" "Timer/Icon@2x.png"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/Icon@2x.png" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Icon@2x.png"36"D8927B79-8C96-4309-8DF8-F149D6A18315-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/background.png" Timer/background.png
+s387800351.756295
+e387800351.806109
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/background.png
+xTimer/background.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/background.png" Timer/background.png03b4c11f5d1db741^705cce1f5d1db741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/background.png0000000000000000^617"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/background.png" Timer/background.png    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/background.png "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/background.png"36"D7BE4ABD-6E06-4138-8496-887834E4E608-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/background@2x.png" Timer/background@2x.png
+s387800351.772189
+e387800351.844514
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/background@2x.png
+xTimer/background@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/background@2x.png" Timer/background@2x.pngd1cac51f5d1db741^1631d81f5d1db741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/background@2x.png0000000000000000^633"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/background@2x.png" "Timer/background@2x.png"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/background@2x.png" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/background@2x.png"36"DBFE96C2-5F45-4ED2-A2CA-C6A40176965C-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/default.png" Timer/default.png
+s387800351.590670
+e387800351.713008
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/default.png
+xTimer/default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/default.png" Timer/default.png7974971f5d1db741^1494b61f5d1db741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/default.png0000000000000000^605"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/default.png" Timer/default.png    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/default.png "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/default.png"36"6A7C2EF2-3295-4B4A-9E02-BB283D7D862A-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/default@2x.png" Timer/default@2x.png
+s387800351.593432
+e387800351.770815
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/default@2x.png
+xTimer/default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/default@2x.png" Timer/default@2x.pngfb04981f5d1db741^5055c51f5d1db741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/default@2x.png0000000000000000^621"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/default@2x.png" "Timer/default@2x.png"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/default@2x.png" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/default@2x.png"36"25664F12-D228-431C-ABF5-14BAC6D5AB64-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheel.png" Timer/wheel.png
+s387800351.529039
+e387800351.621019
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheel.png
+xTimer/wheel.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/wheel.png" Timer/wheel.png3c86871f5d1db741^d2fb9e1f5d1db741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheel.png0000000000000000^597"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/wheel.png" Timer/wheel.png    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheel.png "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheel.png"36"58800D8D-34BB-45E8-93C0-685207696EF6-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheel@2x.png" Timer/wheel@2x.png
+s387800351.563386
+e387800351.712765
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheel@2x.png
+xTimer/wheel@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/wheel@2x.png" Timer/wheel@2x.png8f53901f5d1db741^de90b61f5d1db741^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheel@2x.png0000000000000000^613"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/wheel@2x.png" "Timer/wheel@2x.png"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheel@2x.png" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheel@2x.png"36"5DF4C349-51B0-48BE-8F7B-1E550FF5E430-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheelButton.png" Timer/wheelButton.png
+s387800351.529542
+e387800351.592176
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheelButton.png
+xTimer/wheelButton.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/wheelButton.png" Timer/wheelButton.png7fa1871f5d1db741^1ea8971f5d1db741^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheelButton.png0000000000000000^621"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/wheelButton.png" Timer/wheelButton.png    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheelButton.png "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheelButton.png"36"6BFD0E0B-33C0-4DF3-A0D1-0E742E0A6643-
+
+CCopyPNGFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheelButton@2x.png" Timer/wheelButton@2x.png
+s387800351.532997
+e387800351.589383
+r1
+xCopyPNGFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheelButton@2x.png
+xTimer/wheelButton@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/wheelButton@2x.png" Timer/wheelButton@2x.png268a881f5d1db741^b7ee961f5d1db741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheelButton@2x.png0000000000000000^637"CopyPNGFile "build/Debug-iphoneos/raDial Timer.app/wheelButton@2x.png" "Timer/wheelButton@2x.png"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/wheelButton@2x.png" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/wheelButton@2x.png"36"25C755A5-26C6-48C2-9443-EDFB1B4AA100-
+
+CCopyStringsFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/en.lproj/InfoPlist.strings" Timer/en.lproj/InfoPlist.strings
+s387800351.529027
+e387800351.531736
+r1
+xCopyStringsFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/en.lproj/InfoPlist.strings
+xTimer/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy Timer/en.lproj/InfoPlist.strings1783871f5d1db741^a71f881f5d1db741^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/en.lproj/InfoPlist.strings0000000000000000^582"CopyStringsFile "build/Debug-iphoneos/raDial Timer.app/en.lproj/InfoPlist.strings" Timer/en.lproj/InfoPlist.strings    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/en.lproj" -- Timer/en.lproj/InfoPlist.strings36"E2A1FD77-3070-417C-9F23-41B8C33A2159-
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist "build/Debug-iphoneos/raDial Timer.app/ResourceRules.plist"
+s387800350.793068
+e387800350.795450
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/raDial Timer.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy build/Debug-iphoneos/raDial Timer.app/ResourceRules.plist1118cb1e5d1db741^35f0cb1e5d1db741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial%20Timer.app/ResourceRules.plist000000000080d041^758"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist "build/Debug-iphoneos/raDial Timer.app/ResourceRules.plist"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app"36"7FF401D5-3A96-40A8-BCAB-9800C4B282F6-
+
+CCreateUniversalBinary "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/raDial Timer" normal "armv7 armv7s"
+s387801002.086397
+e387801002.100021
+r1
+xCreateUniversalBinary
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/raDial Timer
+xnormal
+xarmv7 armv7s
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Create universal binary /Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/raDial Timer325716aa5f1db741^209a19aa5f1db741^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial%20Timer.app/raDial%20Timer0000000000000000^753"CreateUniversalBinary "build/Debug-iphoneos/raDial Timer.app/raDial Timer" normal "armv7 armv7s"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    lipo -create "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/raDial Timer" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/raDial Timer" -output "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/raDial Timer"36"2A7C96F1-B81A-4F64-8FB1-37730089D497-
+
+CGenerateDSYMFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app.dSYM" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/raDial Timer"
+s387801002.107274
+e387801002.146372
+r1
+xGenerateDSYMFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app.dSYM
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/raDial Timer
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Generate /Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app.dSYM789b1baa5f1db741^d97725aa5f1db741^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial%20Timer.app.dSYM/0000000000000000^655"GenerateDSYMFile "build/Debug-iphoneos/raDial Timer.app.dSYM" "build/Debug-iphoneos/raDial Timer.app/raDial Timer"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/raDial Timer" -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app.dSYM"36"8AA395C6-4899-499B-8998-6D8E64E23004-
+
+CLd "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/raDial Timer" normal armv7
+s387801002.032894
+e387801002.070847
+r1
+xLd
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/raDial Timer
+xnormal
+xarmv7
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection145"Link /Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/raDial Timer997f08aa5f1db741^b82112aa5f1db741^---0#0#0#--1226"Ld "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/raDial Timer" normal armv7    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -filelist "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/raDial Timer.LinkFileList" -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=5.1 -framework QuartzCore -framework UIKit -framework Foundation -framework CoreGraphics -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7/raDial Timer"36"ACFEE6E1-C488-4B46-8905-20DC4E075920-
+
+CLd "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/raDial Timer" normal armv7s
+s387801002.038479
+e387801002.079197
+r1
+xLd
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/raDial Timer
+xnormal
+xarmv7s
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection146"Link /Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/raDial Timer78ee09aa5f1db741^994514aa5f1db741^---0#0#0#--1231"Ld "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/raDial Timer" normal armv7s    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos -filelist "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/raDial Timer.LinkFileList" -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=5.1 -framework QuartzCore -framework UIKit -framework Foundation -framework CoreGraphics -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/Objects-normal/armv7s/raDial Timer"36"10CA1296-E3DB-47F0-B797-0B5F5144DD8D-
+
+CProcessInfoPlistFile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Info.plist" "Timer/raDial Timer-Info.plist"
+s387800350.793072
+e387800350.797493
+r1
+xProcessInfoPlistFile
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Info.plist
+xTimer/raDial Timer-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Process Timer/raDial Timer-Info.plist7618cb1e5d1db741^7427cc1e5d1db741^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/raDial%20Timer-Info.plist0000000000000000^800"ProcessInfoPlistFile "build/Debug-iphoneos/raDial Timer.app/Info.plist" "Timer/raDial Timer-Info.plist"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility "Timer/raDial Timer-Info.plist" -genpkginfo "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/ResourceRules.plist" -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/Info.plist"36"310AF0CB-B2EC-4572-83DD-A3240C0AFB16-
+
+CProcessPCH "/Users/yaakovgamliel/Documents/code/raDialTimer/DerivedData/raDial Timer/Index/PrecompiledHeaders/raDial Timer-Prefix-cgswoeujqypqggeqgtflxsdycflx_ast/raDial Timer-Prefix.pch.pth" "Timer/raDial Timer-Prefix.pch" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH "/Users/yaakovgamliel/Documents/code/raDialTimer/DerivedData/raDial Timer/Index/PrecompiledHeaders/raDial Timer-Prefix-dqslnwfxateqzcgjudznhqxvtbtq_ast/raDial Timer-Prefix.pch.pth" "Timer/raDial Timer-Prefix.pch" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch.pth" "Timer/raDial Timer-Prefix.pch" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387800350.805955
+e387800351.125409
+r1
+xProcessPCH
+x/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch.pth
+xTimer/raDial Timer-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Precompile Timer/raDial Timer-Prefix.pch807fce1e5d1db741^c618201f5d1db741^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/raDial%20Timer-Prefix.pch0000000000000000^3527"ProcessPCH "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch.pth" "Timer/raDial Timer-Prefix.pch" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-generated-files.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-own-target-headers.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-all-target-headers.hmap" -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-project-headers.hmap" -I/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources/armv7" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources" -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos --serialize-diagnostics "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch.dia" -c "/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/raDial Timer-Prefix.pch" -o "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch.pth" -MMD -MT dependencies -MF "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-acflnaczlhvlzjazvkmbpofuzfpw/raDial Timer-Prefix.pch.d"36"416FC4A2-3B39-4B61-A434-7FF0D98A8493-
+
+CProcessPCH "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch.pth" "Timer/raDial Timer-Prefix.pch" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387800350.805947
+e387800351.137887
+r1
+xProcessPCH
+x/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch.pth
+xTimer/raDial Timer-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Precompile Timer/raDial Timer-Prefix.pch8d80ce1e5d1db741^fe61231f5d1db741^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/raDial%20Timer-Prefix.pch0000000000000000^3530"ProcessPCH "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch.pth" "Timer/raDial Timer-Prefix.pch" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-generated-files.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-own-target-headers.hmap" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-all-target-headers.hmap" -iquote "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer-project-headers.hmap" -I/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources/armv7s" "-I/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/DerivedSources" -F/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos --serialize-diagnostics "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch.dia" -c "/Users/yaakovgamliel/Documents/code/raDialTimer/Timer/raDial Timer-Prefix.pch" -o "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch.pth" -MMD -MT dependencies -MF "/var/folders/8_/c0gz99w11y569pm7mds7hq740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/raDial Timer-Prefix-akjczgdcyxzmqhcfntunqwqegaqy/raDial Timer-Prefix.pch.d"36"5BEF37B5-DBCF-4539-A404-234EEDD34E1F-
+
+CProcessProductPackaging "/Users/yaakovgamliel/Library/MobileDevice/Provisioning Profiles/F0D6EC7A-7467-49B4-836E-FA59CF73BA44.mobileprovision" "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/embedded.mobileprovision"
+s387800351.863409
+e387800351.865979
+r1
+xProcessProductPackaging
+x/Users/yaakovgamliel/Library/MobileDevice/Provisioning Profiles/F0D6EC7A-7467-49B4-836E-FA59CF73BA44.mobileprovision
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection207"ProcessProductPackaging "/Users/yaakovgamliel/Library/MobileDevice/Provisioning Profiles/F0D6EC7A-7467-49B4-836E-FA59CF73BA44.mobileprovision" "build/Debug-iphoneos/raDial Timer.app/embedded.mobileprovision"a31fdd1f5d1db741^36b0dd1f5d1db741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial%20Timer.app/embedded.mobileprovision0000000000000000^722"ProcessProductPackaging "/Users/yaakovgamliel/Library/MobileDevice/Provisioning Profiles/F0D6EC7A-7467-49B4-836E-FA59CF73BA44.mobileprovision" "build/Debug-iphoneos/raDial Timer.app/embedded.mobileprovision"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/yaakovgamliel/Library/MobileDevice/Provisioning Profiles/F0D6EC7A-7467-49B4-836E-FA59CF73BA44.mobileprovision" -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app/embedded.mobileprovision"36"05C3CAA6-29DB-4E86-9DD6-3A64427BD97D-
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer.xcent"
+s387800351.888828
+e387800351.892497
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection224"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer.xcent"7cb5e31f5d1db741^9279e41f5d1db741^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial%20Timer.build/Debug-iphoneos/raDial%20Timer.build/raDial%20Timer.xcent000000000080d041^782"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist "build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer.xcent"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist -entitlements -format xml -o "/Users/yaakovgamliel/Documents/code/raDialTimer/build/raDial Timer.build/Debug-iphoneos/raDial Timer.build/raDial Timer.xcent"36"622A5E5B-3CF8-4628-982C-879307503E93-
+
+CTouch "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app"
+s387801002.185273
+e387801002.191854
+r1
+xTouch
+x/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Touch /Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.appcc7c2faa5f1db741^261d31aa5f1db741^---0#0#0#--399"Touch "build/Debug-iphoneos/raDial Timer.app"    cd /Users/yaakovgamliel/Documents/code/raDialTimer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/yaakovgamliel/Documents/code/raDialTimer/build/Debug-iphoneos/raDial Timer.app"36"71BB725C-0873-4063-95F7-19D8246B325C-
+

@@ -9,6 +9,7 @@
 #import "JHAppDelegate.h"
 
 #import "JHViewController.h"
+#import "YGViewController.h"
 
 @implementation JHAppDelegate
 
@@ -19,10 +20,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[JHViewController alloc] initWithNibName:@"JHViewController" bundle:nil];
+   // self.viewController = [[YGViewController alloc] initWithNibName:@"YGViewController" bundle:nil];
+    self.viewController = [[YGViewController alloc]initWithNibName:@"YGViewController" bundle:nil];
+    
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    [application setStatusBarStyle:UIStatusBarStyleBlackOpaque];
+    [application setStatusBarStyle:UIStatusBarStyleDefault];
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
     return YES;
 }
